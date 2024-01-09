@@ -1,31 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  background: slategray;
+  text-align: center;
+}
+.container {
+  height: 70vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+    gap: 1.9vmin;
+  
+}
+.game-title {
+  color: palegreen;
 }
 
-#ticTacToe {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9vmin;
+  
 }
-
 .box {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    background-color: #3498db;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem lightgray;
+  font-size: 9vmin;
+  color: royalblue;
+  background-color: #A8D8D1
 }
 
-.box:hover {
-    background-color: #2980b9;
+#reset-game-btn {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: limegreen;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem, lightgreen;
+}
+
+#msg {
+  color: greenyellow;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 10vmin;
+}
+
+.hide {
+  display: none;
 }
