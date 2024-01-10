@@ -71,6 +71,7 @@ const checkWinner = () => {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
                 showWinner(pos1Val);
                 stopGame();
+                break;
             } else if (boxClickCount === 9) {
                 msgContainer.classList.remove('hide');
                 msg.innerText = "Opps.. It's a DRAW...!!!"
